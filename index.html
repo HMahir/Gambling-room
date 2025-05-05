@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="ikona.png">
+
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
         <h1 class="main-title">GAMBLING ROOM</h1>
+        <img src="info.png" alt="Info" class="info-icon" onclick="showInstructions()">
     </header>
+
     <div class="container">
         <form action="play.php" method="POST">
             <div class="players">
@@ -55,5 +60,25 @@
             </div>
         </form>
     </div>
+
+    <script>
+        function showInstructions() {
+            Swal.fire({
+                title: 'How to Play',
+                icon: 'info',
+                html: `
+                    <p>🎲 Enter names for <strong>3 players</strong>.</p>
+                    <p>🎯 Choose how many <strong>dice</strong> and how many <strong>turns</strong> each player gets.</p>
+                    <p>📊 Each player rolls the dice per round. Their results are summed.</p>
+                    <p>🏆 The player with the <strong>highest total sum</strong> wins!</p>
+                `,
+                confirmButtonText: 'Got it!',
+                confirmButtonColor: '#f39c12',
+                customClass: {
+                popup: 'custom-swal-bg'
+            }   
+            });
+        }
+    </script>
 </body>
 </html>
