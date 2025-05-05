@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head> 
+    <meta charset="UTF-8">
+    <title>Gambling Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="ikona.png">
+</head>
+<body>
+    <header>
+        <h1 class="main-title">GAMBLING ROOM</h1>
+    </header>
+    <div class="container">
+        <form action="play.php" method="POST">
+            <div class="players">
+                <div class="player-card">
+                    <h2><span class="highlight">First</span> Player</h2>
+                    <input type="text" name="player1" placeholder="Enter player name" required>
+                </div>
+                <div class="player-card">
+                    <h2><span class="highlight">Second</span> Player</h2>
+                    <input type="text" name="player2" placeholder="Enter player name">
+                </div>
+                <div class="player-card">
+                    <h2><span class="highlight">Third</span> Player</h2>
+                    <input type="text" name="player3" placeholder="Enter player name">
+                </div>
+            </div>
+
+            <div class="options">
+                <div class="option-card">
+                    <h2>Dice</h2>
+                    <select name="dice_count">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <div class="option-card">
+                    <h2>Turns</h2>
+                    <select name="rounds">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="submit-button">
+                <button type="submit">Roll the Dice</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
