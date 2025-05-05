@@ -1,0 +1,172 @@
+body {
+    background-image: url(bc3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Cinzel Decorative', cursive, sans-serif;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-title {
+    font-size: 70px;
+    color: #1e170c;
+    text-shadow: 2px 2px 15px rgba(243, 156, 18, 0.8);
+    letter-spacing: 6px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Cinzel Decorative', cursive, sans-serif;
+}
+.container {
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid #e74c3c;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 1100px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.7);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.player-card {
+    background: #2b2b2b;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+	display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.8);
+}
+
+.player-card h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.player-card .highlight {
+    color:rgba(243, 156, 18, 0.8);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+input[type="text"]:focus {
+    background-color: #c0392b;
+    outline: none;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.option-card h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+select:focus {
+    background-color: #444;
+    outline: none;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 0 15px #e74c3c;
+}
+.custom-swal-bg {
+    background-color: #2b2b2b !important; /* Replace with your color */
+    color: rgb(255, 255, 255); /* Optional: text color */
+}
+.info-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 52px;
+    cursor: pointer;
+}
