@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Initialize game setup
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['player1'])) {
     $_SESSION['players'] = [
         ['name' => $_POST['player1'], 'score' => 0],
@@ -31,7 +30,7 @@ if (!isset($_SESSION['players'])) {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 90vh;
+        min-height: 97vh;
         color: white;
         font-family: 'Cinzel Decorative', cursive, sans-serif;
         text-align: center;
@@ -41,11 +40,12 @@ if (!isset($_SESSION['players'])) {
     .main-title {
     font-size: 70px;
     color: #1e170c;
-    text-shadow: 2px 2px 15px rgba(243, 156, 18, 0.8);
+    text-shadow: 2px 2px 15px while;
     letter-spacing: 6px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-family: 'Cinzel Decorative', cursive, sans-serif;
+    -webkit-text-stroke: 1px white;
 }
 
     .container {
